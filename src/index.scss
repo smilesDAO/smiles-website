@@ -5,6 +5,9 @@
 // APP OVERALL SCSS
 @import "./stylesheets/components/app.scss";
 
+// ATOMS
+@import "./stylesheets/components/atoms/hamburger.scss";
+
 // PAGES
 @import "./stylesheets/components/error404.scss";
 @import "./stylesheets/components/nav.scss";

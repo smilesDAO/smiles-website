@@ -3,7 +3,10 @@
   font-weight: bold;
   background-color: $brown;
   color: $white;
-  height: 95px;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: hidden; // prevent content overflow for ultra small devices < 320px
 
   .nav-inner-container {
     max-width: 1080px;
@@ -12,6 +15,9 @@
   }
   .nav-logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     img.logo {
       margin-right: 15px;
     }
@@ -48,4 +54,43 @@
   li:first-child {
     margin-right: auto;
   }
+
+  .hamburger-item {
+    display: none; // desktop view => do not show by default
+  }
+
+
+  // MEDIA QUERIES
+  @media (max-width: 630px) {
+    .nav-item {
+      display: none !important;
+      background-color: red;
+    }
+    .hamburger-item {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    ul {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 350px) {
+    img.logo {
+      height: 35px;
+    }
+    img.logo-text {
+      height: 19px;
+    }
+    .nav-container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
 }
+
+

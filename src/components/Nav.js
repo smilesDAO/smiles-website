@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/smiles-logo.svg";
 import logoText from "../img/smiles-logo-text.svg";
-
+import Hamburger from "./atoms/Hamburger";
 
 const Nav = () => {
   const history = useHistory();
@@ -28,11 +28,14 @@ const Nav = () => {
               </div>
             </Link>
           </li>
+          <li className="hamburger-item">
+            <Hamburger />
+          </li>
           {
             ["wtf", "how", "faq", "docs"].map((page, indx) => {
               return (
                 <li
-                  className={`${selectedNavigation === page ? "selected" : ""} scale-on-hover`}
+                  className={`${selectedNavigation === page ? "selected" : ""} scale-on-hover nav-item`}
                   data-id="donate"
                   key={indx}>
                   <Link to={`/${page}`} className="remove-all-link-styling  ">{page.toUpperCase()}</Link>
