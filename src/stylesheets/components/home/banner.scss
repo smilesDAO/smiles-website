@@ -15,7 +15,7 @@
 
 .left-container {
     flex: 1;
-}  
+}
 
 .right-container {
     flex: 1;
@@ -32,9 +32,9 @@
     top: 0;
     padding-left: 30px;
     text-transform: uppercase;
-    font-family: 'Avenir Next';
     font-style: normal;
-    font-weight: 900;
+    font-family: var(--title-font);
+    font-weight: 800;
     font-size: 5vw;
     line-height: 105%;
     color: $brown;
@@ -50,23 +50,25 @@
     align-items: center;
     color: white;
     margin-bottom: 5vw;
-    height: 60px;
+    // height: 60px;
     border-radius: 30px;
-    
+    padding: 10px 20px;
+
      h2 {
         font-size: 12px;
-        line-height: 40px;
+        // line-height: 40px;
         margin-left: 8px;
         margin-right: 0px;
         text-transform: uppercase;
         font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0;
      }
 
      #buttonIcon {
         font-size: 18px;
-        margin-left: 12px;
      }
-     
+
  }
 
 @media (min-width: 1080px) {
