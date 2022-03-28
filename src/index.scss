@@ -1,1 +1,5 @@
-@import "./stylesheets/index.scss";
+@import "./stylesheets/config/colors.scss";
+@import "./stylesheets/config/fonts.scss";
+@import "./stylesheets/components/app.scss";
+@import "./stylesheets/components/home/_index.scss";
+@import "./stylesheets/components/error404.scss";
