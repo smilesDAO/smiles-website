@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./home/_Index";
 import Error404 from "./Error404";
+import Nav from "./Nav";
 
 // firebase SDK
 import { initializeApp } from "firebase/app";
@@ -26,8 +27,9 @@ const functions = getFunctions(app); // all your callable functions are now acce
 const App = () => {
   return (
     <Router>
+      <Nav />
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/", "/wtf", "/how", "/faq", "/docs"]}>
           <Home />
         </Route>
         <Route exact path="/404">

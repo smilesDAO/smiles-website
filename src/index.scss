@@ -1,5 +1,12 @@
+// CONFIG
 @import "./stylesheets/config/colors.scss";
 @import "./stylesheets/config/fonts.scss";
+
+// APP OVERALL SCSS
 @import "./stylesheets/components/app.scss";
-@import "./stylesheets/components/home/_index.scss";
+
+// PAGES
 @import "./stylesheets/components/error404.scss";
+@import "./stylesheets/components/nav.scss";
+@import "./stylesheets/components/home/_index.scss";
+
