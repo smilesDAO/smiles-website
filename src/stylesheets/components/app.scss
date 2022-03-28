@@ -6,12 +6,13 @@ html {
   outline: 0;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  font-family: var(--main-font);
 }
 
 body {
   background-color: $cream;
   color: white;
-  font-family: "Ubuntu", sans-serif;
+  margin: 0;
 }
 
 // Basic Styling

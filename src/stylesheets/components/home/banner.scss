@@ -1,14 +1,15 @@
 .banner-container {
-     .title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-transform: uppercase;
-        font-family: 'Avenir Next';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 2em;
-        line-height: 105%;
-        color: $brown;
-     }
+  position: relative;
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 105%;
+    color: $brown;
+  }
 }
