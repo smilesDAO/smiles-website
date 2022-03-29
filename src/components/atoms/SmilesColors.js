@@ -25,7 +25,7 @@ const colors = [
   },
   {
     name: "green",
-    hex: "#3F945A",
+    hex: "#42995E", // changed from this: "#3F945A",
   },
   {
     name: "cream",
