@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
 
-const Hamburger = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsOpen(!isOpen); // toggle between states
+const Hamburger = ({hamburgerIsOpen, setHamburgerIsOpen}) => {
+  const toggleHamburgerIsOpen = () => {
+    setHamburgerIsOpen(!hamburgerIsOpen); // toggle between states
   }
-
-  useEffect(() => {
-    console.log("isOpen changed... isOpen: " + isOpen);
-  }, [isOpen])
 
   return (
     <div className="hamburger-container">
       <button
-        className={`hamburger hamburger--squeeze no-select ${isOpen ? "is-active" : ""}`}
+        className={`hamburger hamburger--squeeze no-select ${hamburgerIsOpen ? "is-active" : ""}`}
         type="button"
-        onClick={handleClick}
+        onClick={toggleHamburgerIsOpen}
       >
         <span className="hamburger-box">
           <span className="hamburger-inner"></span>

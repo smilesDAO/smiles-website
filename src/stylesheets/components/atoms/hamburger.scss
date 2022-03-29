@@ -9,8 +9,6 @@
 .hamburger-container {
   .hamburger {
     opacity: 0.7;
-    // padding: 15px 15px;
-    padding-right: 5px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -23,6 +21,7 @@
     border: 0;
     margin: 0;
     overflow: visible;
+    padding: 20px;
   }
   .hamburger:hover {
     opacity: 0.7;
