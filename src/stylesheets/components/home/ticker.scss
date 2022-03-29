@@ -1,3 +1,33 @@
-.ticker-container {
-    
+// THESE VARIABLES ARE DEFAULTS ONLY
+// WILL BE OVERWRITTEN BY JS...
+:root {
+  --ticker-sliding-background-animation: slide 20s linear infinite;
+  --ticker-image-width: 1500px; /* The image width */
+  --ticker-sliding-background-width: 9000px; /* The image width times 6 */
+  --ticker-sliding-background-url: url("../../../img/tickerPoweredBy.svg") repeat-x;
 }
+.ticker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  .sliding-background {
+    background: var(--ticker-sliding-background-url) repeat-x;
+    background-size: contain;
+    height: 40px;
+    width: var(--ticker-sliding-background-width); /* The image width times 6 */
+    animation: var(--ticker-sliding-background-animation);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--ticker-image-width), 0, 0); /* The image width */
+  }
+}
+
+
