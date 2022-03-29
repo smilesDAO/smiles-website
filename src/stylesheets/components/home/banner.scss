@@ -23,6 +23,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        vertical-align: top; // to prevent container being a tiny bit bigger than the image: https://stackoverflow.com/a/11447727/6272061
     }
 }
 
