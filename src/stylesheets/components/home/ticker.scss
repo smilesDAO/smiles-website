@@ -65,4 +65,28 @@
   }
 }
 
+// MEDIA QUERIES
+// make ticker smaller for phones (vw <=425)
+// howItWorks => height: 25px
+@media (max-width: 425px) {
+  // @keyframes slideHowItWorks {
+  //   100% { transform: translate3d(-930.06px, 0, 0) !important }
+  // }
+  .ticker-container.ticker-how-it-works .sliding-background {
+    height: 25px !important;
+    width: 5580.38px !important;
+    animation: slideHowItWorks 40s linear infinite !important; // since the image is half the size, we need to double the animation length to have the same speed
+  }
+  .ticker-container.ticker-powered-by .sliding-background-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  // NOT WORKING BUT I THINK ITS OK LIKE IT IS NOW
+  // .ticker-container.ticker-powered-by .sliding-background {
+  //   // height: 15px !important;
+  //   // width: 2279.25px !important;
+  //   // animation: slidePoweredBy 14.66s linear infinite !important; // since the image is half the size, we need to double the animation length to have the same speed
+  // }
+}
+
 
