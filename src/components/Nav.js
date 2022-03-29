@@ -60,7 +60,11 @@ const Nav = () => {
         <div className="mobile-menu-inner-container">
           {menuItems.map((page, indx) => {
             return (
-              <Link to={`/${page}`} className="remove-all-link-styling" onClick={closeMenu}>
+              <Link
+                key={indx}
+                to={`/${page}`}
+                className="remove-all-link-styling"
+                onClick={closeMenu}>
                 <h2>
                   {page.toUpperCase()}
                 </h2>
