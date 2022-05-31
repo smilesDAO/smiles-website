@@ -1,0 +1,12 @@
+.playground-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  color: black;
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    &.mobile {
+      grid-template-columns: auto auto;
+    }
+  }
+}

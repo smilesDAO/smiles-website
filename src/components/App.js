@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./home/_Index";
 import Error404 from "./Error404";
 import Nav from "./Nav";
+import Playground from "./playground/_Index";
 
 // firebase SDK
 import { initializeApp } from "firebase/app";
@@ -31,6 +32,9 @@ const App = () => {
       <Switch>
         <Route exact path={["/", "/wtf", "/how", "/faq", "/docs"]}>
           <Home />
+        </Route>
+        <Route exact path="/playground">
+          <Playground />
         </Route>
         <Route exact path="/404">
           <Error404 />
